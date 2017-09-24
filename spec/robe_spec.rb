@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'robe'
+require 'robe-server'
 require 'net/http'
 
 describe Robe do

@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'robe-server'
-  gem.version = '1.0.1'
+  gem.version = '1.0.2'
   gem.authors = 'Phil Hagelberg, Dmitry Gutov, Alexsey Ermolaev'
   gem.email = 'afay.zangetsu@gmail.com'
   gem.homepage = 'https://github.com/AfsmNGhr/robe-server'
