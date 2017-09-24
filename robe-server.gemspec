@@ -6,11 +6,10 @@ Gem::Specification.new do |gem|
   gem.homepage = 'https://github.com/AfsmNGhr/robe-server'
   gem.description = 'Server for robe'
   gem.summary = 'Code navigation, documentation lookup and completion for Ruby'
-  gem.license = 'GPL3'
+  gem.license = 'GPL-3.0'
 
-  gem.add_development_dependency 'rake', '~> 10.3.0'
+  gem.add_development_dependency 'rake', '~> 10.3'
   gem.add_development_dependency 'rspec', '~> 2.14'
-  gem.add_development_dependency 'simplecov', require: false
 
   gem.files = `git ls-files`.split("\n")
   gem.require_paths = ['lib']

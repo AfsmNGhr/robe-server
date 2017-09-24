@@ -1,11 +1,13 @@
+require 'simplecov'
+require 'coveralls'
 require 'pry'
 
-begin
-  require 'simplecov'
-  SimpleCov.start if RSpec.configuration.files_to_run.size > 1
-rescue LoadError
-  puts "simplecov not loaded"
-end
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+
+SimpleCov.start
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
